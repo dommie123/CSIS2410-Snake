@@ -72,7 +72,7 @@ namespace Snake
         /// </summary>
         public static void InitializeGrid()
         {
-            Size = 25;
+            Size = 30;
             Tiles = new int[Size,Size];
             snake = new Snake(10, 0);
             initialLength = snake.Length;
@@ -84,6 +84,7 @@ namespace Snake
             snake.DrawSnake();
             DrawGrid();
             DrawTitle();
+            Console.SetWindowSize(Size * 3, Size * 2);
         }
         /// <summary>
         /// Method <c>Update</c> updates the grid with new information.
@@ -99,7 +100,7 @@ namespace Snake
                 {
                     snake.Move();       // Here, the snake's speed could change to 0 within this condition,
                                         // hence the redundancy.
-                    if (snake.Speed > 0) Thread.Sleep(500 / snake.Speed);
+                    if (snake.Speed > 0) Thread.Sleep(100 / snake.Speed);
                     snake.DrawSnake();
                 }
 
