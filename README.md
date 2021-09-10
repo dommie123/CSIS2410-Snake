@@ -11,5 +11,5 @@ All of the features of a classic Snake game coded purely in C#, plus:
 * The snake gets faster as you score more points,
 * There are added obstacles you must avoid while scoring points,
 * More obstacles are added for each point you score, 
-* A sound that plays when the player gets a Game Over, and
+* A sound plays when you get a Game Over, and
 * An instruction manual (you probably saw this one coming).
